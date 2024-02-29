@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="FontChange"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="e121eb86-57d7-44aa-808f-5408ef90366d"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </CustomAction>
+</Elements>
