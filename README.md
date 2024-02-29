@@ -1,73 +1,52 @@
-# font-change-app-customizer
+# SharePoint Font Change and Chatbot Integration
 
-## Summary
+This SharePoint Framework (SPFx) application customizer integrates custom font styles across SharePoint sites and provides a floating chatbot functionality.
 
-Short summary on functionality and used technologies.
+## Overview
 
-[picture of the solution in action, if possible]
-
-## Used SharePoint Framework Version
-
-![version](https://img.shields.io/badge/version-1.16.1-green.svg)
-
-## Applies to
-
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
-## Prerequisites
-
-> Any special pre-requisites?
-
-## Solution
-
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
-
-## Version history
-
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
-
-## Disclaimer
-
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
-
----
-
-## Minimal Path to Awesome
-
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
-
-> Include any additional steps as needed.
+This solution leverages SPFx to customize the font styles across all pages within a SharePoint site collection. Additionally, it embeds a floating chatbot icon that allows users to interact with a chatbot seamlessly.
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
+- **Font Customization**: Customizes the font styles for all elements across SharePoint pages.
+- **Floating Chatbot Icon**: Integrates a floating chatbot icon that allows users to interact with the chatbot from any page within the SharePoint site.
 
-This extension illustrates the following concepts:
+## Prerequisites
 
-- topic 1
-- topic 2
-- topic 3
+- SharePoint Online environment
+- SharePoint Framework (SPFx) development environment set up
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+## Installation
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+1. Clone this repository to your local machine.
+2. Navigate to the root directory of the cloned repository.
+3. Run `npm install` to install the project dependencies.
+4. Run `gulp bundle --ship` followed by `gulp package-solution --ship` to bundle and package the solution.
+5. Deploy the generated package (`.sppkg` file) to your SharePoint app catalog.
+6. Add the deployed solution to the site collection's site contents.
+7. Navigate to the site collection where you want to apply the font customization and chatbot integration.
+8. Configure the custom font URL and other properties as needed in the SharePoint site.
+9. The font customization and chatbot integration will be applied to all pages within the site collection.
 
-## References
+## Configuration
 
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+The font customization and chatbot integration can be configured using the properties of the SharePoint Framework application customizer.
+
+- `fontUrl`: URL of the custom font stylesheet.
+- Other configuration options such as the URL of the chatbot iframe and the size and positioning of the chatbot can be adjusted as needed.
+- SharePoint page placeholders can be used to apply the font customization to specific parts of the page. Available placeholders include:
+  - `{PageHeader}`
+  - `{PageContent}`
+  - `{PageFooter}`
+  - `{TopPlaceholder}`
+  - `{BottomPlaceholder}`
+
+## Usage
+
+- Once deployed and configured, the font customization and chatbot integration will be automatically applied to all pages within the SharePoint site collection.
+- Users can interact with the chatbot by clicking on the floating chatbot icon, which will display the chatbot container.
+
+## Contact
+
+For any inquiries or support, please contact [Your Name](mailto:youremail@example.com).
+
